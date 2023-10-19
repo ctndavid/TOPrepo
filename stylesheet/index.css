@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Playfair:wght@300&display=swap");
+
+:root {
+  box-sizing: border-box;
+  margin: 0;
+
+  --step--3: clamp(0.64rem, 0.656rem + -0.0237vw, 0.6513rem);
+  --step--2: clamp(0.7813rem, 0.7734rem + 0.0395vw, 0.8rem);
+  --step--1: clamp(0.9375rem, 0.9112rem + 0.1316vw, 1rem);
+  --step-0: clamp(1.125rem, 1.0724rem + 0.2632vw, 1.25rem);
+  --step-1: clamp(1.35rem, 1.2605rem + 0.4474vw, 1.5625rem);
+  --step-2: clamp(1.62rem, 1.4797rem + 0.7013vw, 1.9531rem);
+  --step-3: clamp(1.9438rem, 1.7343rem + 1.0474vw, 2.4413rem);
+
+  font-family: "Battambang", sans-serif;
+}
+
+body {
+  background-color: black;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+.site-title {
+  position: relative;
+  width: fit-content;
+  height: 6vh;
+
+  font-size: var(--step-3);
+  font-weight: 900;
+  color: white;
+}
+
+.project {
+  position: relative;
+  width: 98vw;
+  height: 90vh;
+
+  border: 1px dashed white;
+  border-radius: 25px;
+}
+
+.pr1 {
+  height: 85vh;
+
+  background: url("/img/italian.jpeg");
+  background-size: 85vw;
+}
+.pr1 h1 {
+  font-size: var(--step-3);
+  font-weight: 900;
+  color: black;
+  text-align: center;
+}
+.pr1 ul {
+  font-size: var(--step-2);
+  font-weight: 400;
+  color: black;
+}
+.pr1 a {
+  color: white;
+}
